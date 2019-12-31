@@ -1,0 +1,391 @@
+.top_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+}
+
+.collapsible {
+    opacity: 0.1;
+    cursor: pointer;
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.topright {
+    position: absolute;
+    top: 15%;
+    width: 40px;
+    height: 40px;
+    right: 16px;
+    background-image: url("../icons/collapseIcon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: currentColor;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
+.active,
+.collapsible:hover {
+    opacity: 0.3;
+}
+
+.collapsible:after {
+    font-weight: bold;
+    float: right;
+}
+
+.active:after {}
+
+.content {
+    width: 200px;
+    font-size: medium;
+    color: black;
+    font-weight: bold;
+    float: right;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    color: black;
+    font-size: medium;
+}
+
+.textareaClass {
+    border: 3px solid #555;
+    color: black;
+    font-size: medium;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding-top: 20px;
+}
+
+.rightColumn {
+    float: left;
+    width: 50%;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.middleColumn {
+    padding-top: 20px;
+    padding-left: 35%;
+    text-align: center;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bg {
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg_img.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-intro {
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/intro_bg.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-reasons {
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/reasons_bg.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-results {
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/results_bg.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-my-solution {
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/mySolution.png");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: url(immigration_bg.jpg);*/
+    animation: animate 100s linear infinite;
+}
+
+.container {
+    color: aliceblue;
+    margin-top: 200px;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer {
+    margin-top: -200px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    /*background-image: url(grassland.png);*/
+}
+
+.earthCrackFooter {
+    margin-top: -200px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    /*background-image: url(earthCrack.jpeg);*/
+}
+
+.heading {
+    text-align: center;
+    color: white;
+}
+
+#box {
+    margin-top: 50px;
+    border: black 2px solid;
+}
+
+#windmill {
+    padding: 10px;
+}
+
+#windmilldesc {
+    padding: 20px;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 5440px;
+    }
+}
+
+.sun_container {
+    text-align: left;
+}
+
+.svg-sun {
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: 50% 50%;
+    -webkit-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+    -moz-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+    -o-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+    -ms-animation: spin 25s linear infinite, sun-glow 3s 0s ease-in-out infinite;
+    animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+}
+
+#sun {
+    stroke-width: 18;
+    stroke-dasharray: 2;
+    stroke-dashoffset: 2;
+}
+
+
+/* animation for the sun glowing effect */
+
+@-webkit-keyframes sun-glow {
+    0% {
+        fill: #f1c40f;
+        stroke: #f1c40f;
+    }
+    50% {
+        fill: #e67e22;
+        stroke: #e67e22;
+    }
+    100% {
+        fill: #f1c40f;
+        stroke: #f1c40f;
+    }
+}
+
+@-moz-keyframes sun-glow {
+    0% {
+        fill: #f1c40f;
+        stroke: #f1c40f;
+    }
+    50% {
+        fill: #e67e22;
+        stroke: #e67e22;
+    }
+    100% {
+        fill: #f1c40f;
+        stroke: #f1c40f;
+    }
+}
+
+@-o-keyframes sun-glow {
+    0% {
+        fill: #f1c40f;
+        stroke: #f1c40f;
+    }
+    50% {
+        fill: #e67e22;
+        stroke: #e67e22;
+    }
+    100% {
+        fill: #f1c40f;
+        stroke: #f1c40f;
+    }
+}
+
+@-ms-keyframes sun-glow {
+    0% {
+        fill: #f1c40f;
+        stroke: #f1c40f;
+    }
+    50% {
+        fill: #e67e22;
+        stroke: #e67e22;
+    }
+    100% {
+        fill: #f1c40f;
+        stroke: #f1c40f;
+    }
+}
+
+@keyframes sun-glow {
+    0% {
+        fill: #f1c40f;
+        stroke: #f1c40f;
+    }
+    50% {
+        fill: #e67e22;
+        stroke: #e67e22;
+    }
+    100% {
+        fill: #f1c40f;
+        stroke: #f1c40f;
+    }
+}
+
+
+/* start spin animation */
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes spin {
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes spin {
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
