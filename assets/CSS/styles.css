@@ -58,6 +58,13 @@
     transition: max-height 0.2s ease-out;
 }
 
+.indexMenuItems {   
+    font-size: medium;
+    color: #ccc;
+    font-weight: bolder;
+    font-variant-caps: all-petite-caps;
+}
+
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
